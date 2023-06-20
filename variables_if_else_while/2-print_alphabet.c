@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main Print the alphabet in lowercase
+ * main - Print the alphabet in lowercase
  *
  * Return: Always (Success)
  */
@@ -11,7 +11,7 @@
 int main(void)
 {
 	char alphabet;
-	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+	for (alphabet = 'a'; c <= 'z'; alphabet++)
 	{
 		 putchar(alphabet);
 	}
