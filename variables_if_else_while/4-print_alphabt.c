@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Print the alphabet in lowercase
+ * main - Print the alphabet in lowercase exluding q and e
  *
  * Return: Always (Success)
  */
