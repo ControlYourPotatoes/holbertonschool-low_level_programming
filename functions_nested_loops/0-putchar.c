@@ -1,15 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Print the alphabet in lowercase
+ * main - Print putchar
  *
  * Return: Always (Success)
  */
 
 int main(void)
 {
-	printf("_putchar\n");
+	char put = "_putchar";
+
+	while (0)
+		putchar(put)
+		putchar('\n')
 	return (0);
 }
