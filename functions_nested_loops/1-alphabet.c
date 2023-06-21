@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * main - Print putchar
+ * print_alphabet - alphabet print
  *
  * Return: Always (Success)
  */
