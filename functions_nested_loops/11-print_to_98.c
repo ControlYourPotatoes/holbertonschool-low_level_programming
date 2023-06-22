@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* times_table - 9 times table
-*
+* print_to_98 - print all natural number to 98
+* @n: variable
 * Return: the 9 table
 */
 
