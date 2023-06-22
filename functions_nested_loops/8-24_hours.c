@@ -2,12 +2,12 @@
 #include <ctype.h>
 
 /**
-* jack_bouer - 24 hour clock
+* jack_bauer - 24 hour clock
 *
 * Return: Full countdown of the countdown
 */
 
-void jack_bouer(void)
+void jack_bauer(void)
 {
 	int hours = 0, minutes = 0;
 
