@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+
 
 /**
 * jack_bauer - 24 hour clock
