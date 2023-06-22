@@ -1,15 +1,24 @@
-#include "main.h"
-#include <ctype.h>
+#include <main.h>
+
 /**
- * print_last_digit - Compute absolute value
- * @n: variable
- *
- * Return: ss
- */
-int  print_last_digit(int n)
+* jack_bouer - 24 hour clock
+*
+* Return: Full countdown of the countdown
+*/
+
+void jack_bouer(void)
 {
-	if (n < 0)
-		n = n * -1;
-	_putchar ((n % 10) + '0');
-	return (n % 10);
+	int hours = 0, minutes = 0
+
+	for (hours = 0; hours < 24; hours++)
+	{
+		for (minutes = 0; minutes < 60, minutes++)
+		{
+			_putchar((hours / 10) + 0);
+			_putchar((hours % 10) + 0);
+			_putchar(';');
+			_putchar((minutes / 10) + 0);
+			_putchar((minutes % 10) + 0);
+		}
+	}
 }
