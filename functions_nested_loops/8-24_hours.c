@@ -1,6 +1,4 @@
 #include "main.h"
-
-
 /**
 * jack_bauer - 24 hour clock
 *
