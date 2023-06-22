@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
 * jack_bouer - 24 hour clock
@@ -8,11 +8,11 @@
 
 void jack_bouer(void)
 {
-	int hours = 0, minutes = 0
+	int hours = 0, minutes = 0;
 
 	for (hours = 0; hours < 24; hours++)
 	{
-		for (minutes = 0; minutes < 60, minutes++)
+		for (minutes = 0; minutes < 60; minutes++)
 		{
 			_putchar((hours / 10) + 0);
 			_putchar((hours % 10) + 0);
