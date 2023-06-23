@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_last_digit - Compute absolute value
- * @n: variable
+ * @a: variable
  *
  * Return: n = last digitbr
  */
