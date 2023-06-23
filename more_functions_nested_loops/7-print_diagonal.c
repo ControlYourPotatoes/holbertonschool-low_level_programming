@@ -6,22 +6,24 @@
  *
  * Return: void
  */
-void print_diagonal(int n) 
+void print_diagonal(int n)
 {
 	int i, spaces;
 
 	if (n > 0)
 	{
-		for (i = 1; i <= n; i++) 
+		for (i = 1; i <= n; i++)
 			{
-			for (spaces = 1; spaces < i; spaces++) {
+			for (spaces = 1; spaces < i; spaces++)
+			{
 				putchar(' ');
 			}
 			putchar('\\');
 			putchar('\n');
 		}
-    }
-	else {
-        putchar('\n');
-    }
+	}
+	else
+	{
+		putchar('\n');
+	}
 }
