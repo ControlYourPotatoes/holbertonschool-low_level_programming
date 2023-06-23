@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _isupper - Print putchar
+ * _isupper - Check Upper
  * @c: variable
  * Return: Always (Success)
  */
