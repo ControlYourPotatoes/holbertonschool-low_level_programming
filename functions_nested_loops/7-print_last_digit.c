@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+#include <stdio.h>
 /**
  * print_last_digit - Compute absolute value
  * @n: variable
@@ -18,6 +18,6 @@ int  print_last_digit(int n)
 	{
 		_putchar(n % 10 + '0');
 	}
-		printf(%d, INT_MIN)
-		return (n % 10);
+		
+		return (INT_MIN);
 }
