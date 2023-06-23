@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - alphabet print
+ * more_numbers - prints numbers 0-14 x10
  *
  * Return: Always (Success)
  */
 
-void print_alphabet_x10(void)
+void more_numbers(void)
 {
 	char c;
 	int count = 0;
