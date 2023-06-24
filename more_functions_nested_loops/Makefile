@@ -4,7 +4,7 @@
 CC := gcc
 
 # Compiler flags
-CFLAGS := -Wall -Wextra -O2
+CFLAGS := -Wall -pedantic -Werror -Wextra -std=gnu89
 
 # Prompt for the file to compile
 .PHONY: all
