@@ -31,7 +31,7 @@ int main(void)
 		}
 		if (i != 100)
 		{
-			printf(" "); // Add space separator for all except the last number
+			printf(" ");
 		}
 	}
 	putchar('\n');
