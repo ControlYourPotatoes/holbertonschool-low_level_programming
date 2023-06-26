@@ -2,9 +2,11 @@
 
 /**
  * _strlen - the length of the string
- * s: the string
+ * @s: the string
+ * Return: String lenth
 */
-int _strlen(const char *s)
+
+int _strlen(char *s)
 {
 	int i = 0;
 
