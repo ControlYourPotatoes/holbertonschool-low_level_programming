@@ -3,17 +3,16 @@
 #include "main.h"
 
 /**
- * puts_half - prints the half of the given string
- * @str: the string to print
+ * print_array - prints the elements of an array
+ * @a: array to print
+ * @n: number of elements
 */
 
-void puts_half(char *str)
+void print_array(int *a, int n)
 {
-	int i, n, middle;
+	int i;
 
-	n = strlen(str);
-	middle = (n - 1) / 2;
-	for (i = middle + 1; i < n; i++)
-		putchar(str[i]);
-	putchar('\n');
+	for (i = 0; i < n; i++)
+		printf("%d ", a[i]);
+	printf("\n");
 }
