@@ -11,10 +11,9 @@ void puts_half(char *str)
 {
 	int i, n, middle;
 
-	printf("%s", str);
 	n = strlen(str);
-	middle = n / 2;
-	for (i = middle; i < n; i++)
+	middle = (n - 1) / 2;
+	for (i = middle + 1; i < n; i++)
 		putchar(str[i]);
 	putchar('\n');
 }
