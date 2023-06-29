@@ -13,7 +13,7 @@ char *leet(char *str)
 {
 	size_t length = strlen(str);
 	char checkLetters[] = {'A', 'E', 'O', 'T', 'L'};
-	char replaceLetters[] = {'1', '2', '3', '4', '5'};
+	char replaceLetters[] = {'1', '2', '3', '7', '5'};
 	size_t i, j;
 
 	for (i = 0; i < length; i++)
@@ -22,7 +22,7 @@ char *leet(char *str)
 
 		for (j = 0; j < sizeof(checkLetters); j++)
 		{
-			if (current == checkLetters[j] || current == (checkLetters[j] - 32))
+			if (current == checkLetters[j] || current == (checkLetters[j] + 32))
 			{
 				str[i] = replaceLetters[j];
 				break;
