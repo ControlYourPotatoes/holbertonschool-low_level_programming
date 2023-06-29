@@ -11,33 +11,22 @@
 
 char *leet(char *str)
 {
-	int length = strlen(str);
-	int i;
-	char current;
+	size_t length = strlen(str);
+	char checkLetters[] = {'A', 'E', 'O', 'T', 'L'};
+	char replaceLetters[] = {'1', '2', '3', '4', '5'};
+	size_t i, j;
 
 	for (i = 0; i < length; i++)
 	{
-		current = str[i];
+		char current = str[i];
 
-		if (current == 'a' || current == 'A')
+		for (j = 0; j < sizeof(checkLetters); j++)
 		{
-			str[i] = '4';
-		}
-		else if (current == 'e' || current == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (current == 'o' || current == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (current == 't' || current == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (current == 'l' || current == 'L')
-		{
-			str[i] = '1';
+			if (current == checkLetters[j] || current == (checkLetters[j] + 32))
+			{
+				str[i] = replaceLetters[j];
+				break;
+			}
 		}
 	}
 	return (str);
