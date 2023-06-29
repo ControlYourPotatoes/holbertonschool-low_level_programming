@@ -22,7 +22,7 @@ char *leet(char *str)
 
 		for (j = 0; j < sizeof(checkLetters); j++)
 		{
-			if (current == checkLetters[j] || current == (checkLetters[j] + 32))
+			if (current == checkLetters[j] || current == (checkLetters[j] - 32))
 			{
 				str[i] = replaceLetters[j];
 				break;
