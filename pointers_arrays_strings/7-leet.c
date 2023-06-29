@@ -13,7 +13,7 @@ char *leet(char *str)
 {
 	size_t length = strlen(str);
 	char checkLetters[] = {'A', 'E', 'O', 'T', 'L'};
-	char replaceLetters[] = {'1', '2', '3', '7', '5'};
+	char replaceLetters[] = {'4', '3', '0', '7', '1'};
 	size_t i, j;
 
 	for (i = 0; i < length; i++)
