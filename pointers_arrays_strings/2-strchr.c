@@ -8,7 +8,7 @@
  * Return: pointer to the location of the character
 */
 
-char *_strchr(char *s, int c)
+char *_strchr(char *s, char c)
 {
 	int i;
 
