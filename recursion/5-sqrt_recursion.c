@@ -10,12 +10,12 @@
  */
 int sqrt_help(int a, int b)
 {
-    if (a == (b * b))
-        return (b);
-    else if ((b * b) > a)
-        return (-1);
-    else
-        return (sqrt_help(a, b + 1));
+	if (a == (b * b))
+		return (b);
+	else if ((b * b) > a)
+		return (-1);
+	else
+		return (sqrt_help(a, b + 1));
 }
 
 /**
@@ -26,7 +26,7 @@ int sqrt_help(int a, int b)
  */
 int _sqrt_recursion(int n)
 {
-    if (n <= 0)
-        return (-1);
-    return (sqrt_help(n, 0));
+	if (n <= 0)
+		return (-1);
+	return (sqrt_help(n, 0));
 }
