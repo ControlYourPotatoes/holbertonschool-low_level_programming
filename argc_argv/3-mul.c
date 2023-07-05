@@ -13,18 +13,19 @@ int main(int argc, char *argv[])
 {
 	int i, x;
 	int result = 1;
-	
+
 	for (i = 0; i < argc; i++)
 	{
 	}
 
-
 	for (i = 1; i < argc; i++)
 	{
 		x = strtol(argv[i], NULL, 0);
-
 		result = result * x;
 	}
-	printf("%d\n", result);
+	if (argc >= 3)
+		printf("%d\n", result);
+	else
+		printf("Error\n");
 	return (0);
 }
