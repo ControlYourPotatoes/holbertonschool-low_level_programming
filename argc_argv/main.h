@@ -1,1 +1,1 @@
-int myname (int argc, char *argv[]);
+int myname(int argc, char *argv[]);
