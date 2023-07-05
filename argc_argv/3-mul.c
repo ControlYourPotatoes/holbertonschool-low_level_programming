@@ -24,8 +24,13 @@ int main(int argc, char *argv[])
 		result = result * x;
 	}
 	if (argc >= 3)
+	{
 		printf("%d\n", result);
+		return (1);
+	}
 	else
+	{
 		printf("Error\n");
-	return (0);
+		return (0);
+	}
 }
