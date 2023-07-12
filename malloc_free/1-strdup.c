@@ -16,7 +16,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	len = strlen(str);
@@ -24,10 +24,10 @@ char *_strdup(char *str)
 
 	if (duplicate == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	strcpy(duplicate, str);
 
-	return duplicate;
+	return (duplicate);
 }
