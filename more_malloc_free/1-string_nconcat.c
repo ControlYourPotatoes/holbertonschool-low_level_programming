@@ -7,6 +7,7 @@
  * @s1: the string 1
  * @s2: the string 2
  * @n: the number of characters to conc
+ * Return: concatanated string or null
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
