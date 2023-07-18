@@ -1,10 +1,12 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * print_dog - print a structure.
  * @d: pointer containing the structure.
  */
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
@@ -15,8 +17,10 @@ void print_dog(struct dog *d)
 	else
 		printf("Name: %s\n", d->name);
 
+	printf("Age: %.1f\n", d->age);
+
 	if (d->owner == NULL)
 		printf("Owner: (nil)\n");
 	else
-		printf("Owner: %s\n", d->breed);
+		printf("Owner: %s\n", d->owner);
 }
