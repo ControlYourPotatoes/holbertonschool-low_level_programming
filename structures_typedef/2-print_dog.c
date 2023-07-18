@@ -3,8 +3,11 @@
 #include <stdio.h>
 
 /**
- * print_dog - print a structure.
- * @d: pointer containing the structure.
+ * print_dog - function with 1 argument
+ * @d: structure pointer
+ *
+ * Description: prints a struct
+ * Return: na
  */
 
 void print_dog(struct dog *d)
@@ -16,9 +19,7 @@ void print_dog(struct dog *d)
 		printf("Name: (nil)\n");
 	else
 		printf("Name: %s\n", d->name);
-
 	printf("Age: %.1f\n", d->age);
-
 	if (d->owner == NULL)
 		printf("Owner: (nil)\n");
 	else
