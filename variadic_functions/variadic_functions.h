@@ -5,8 +5,8 @@
 
 typedef struct validTypes
 {
-  char *valid;
-  void (*f)();
+char *valid;
+void (*f)();
 } v_types;
 
 int _putchar(char c);
