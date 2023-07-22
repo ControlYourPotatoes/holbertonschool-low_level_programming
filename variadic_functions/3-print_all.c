@@ -9,9 +9,6 @@
 
 void print_all(const char *const format, ...)
 {
-	char ch, *s;
-	int i;
-	float f;
 	const char *ptr = format;
 	va_list args;
 
@@ -31,12 +28,15 @@ void print_all(const char *const format, ...)
 				printf("%f", va_arg(args, double));
 				break;
 			case 's':
-				const char *s = va_arg(args, char *);
+				{
+					const char *s = va_arg(args, char *);
 
-				if (s)
-					printf("%s", s);
-				printf("(nil)");
-				break;
+					if (s)
+						printf("%s", s);
+					else
+						printf("(nil)");
+					break;
+				}
 			case ' ':
 			case ',':
 				printf(", ");
