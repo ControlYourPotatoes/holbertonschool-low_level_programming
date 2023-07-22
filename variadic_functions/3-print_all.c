@@ -9,17 +9,21 @@
 
 void print_all(const char *const format, ...)
 {
-	char ch;
+	char ch, *s;
 	int i;
 	float f;
-	char *s;
 	const char *ptr = format;
 	va_list args;
 
 	va_start(args, format);
-
 	while (*ptr)
 	{
+		if (*ptr == ' ')
+		{
+			printf(" ");
+			ptr++;
+			continue;
+		}
 		switch (*ptr)
 		{
 			case 'c':
