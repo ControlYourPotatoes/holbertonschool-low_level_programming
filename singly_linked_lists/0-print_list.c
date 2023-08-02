@@ -7,17 +7,18 @@
  */
 size_t print_list(const list_t *h)
 {
-    size_t i = 0; /* counts number of elements */
+    size_t count = 0; /* counts number of elements */
 
     while (h != NULL) /* checks  if struck has data*/
     {
-        if (h->str == NULL) /*checks if str id null if true return [0] (nil) else print it*/
-            printf("[0] (nil)\n");
-        else
+        if (h->str != NULL) /*checks if str id null if true return [0] (nil) else print it*/
             printf("[%d] %s\n", h->len, h->str);
 
+        else
+            printf("[0] (nil)\n");
+
         h = h->next; /* goes to the next entry*/
-        i++;
+        count++;     /* adds 1 */
     }
-    return (i);
+    return (count);
 }
