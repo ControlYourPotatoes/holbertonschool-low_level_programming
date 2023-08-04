@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ *add_dnodeint_end - adds a new node in the end
+ *@head: a pointer to head
+ *@n: data to be stored
+ *Return: new node address of null if failed
+ */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
     dlistint_t *new_node;
