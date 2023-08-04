@@ -11,17 +11,20 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
     if (str == NULL)
-        return NULL;
+        return (NULL);
 
-    list_t *newTail = (list_t *)malloc(sizeof(list_t));
+    list_t *newTail;
+    
+    newTail = (list_t *)malloc(sizeof(list_t));
+
     if (newTail == NULL)
-        return NULL;
+        return (NULL);
 
     newTail->str = strdup(str);
     if (newTail->str == NULL)
     {
         free(newTail);
-        return NULL;
+        return (NULL);
     }
 
     newTail->len = strlen(str);
