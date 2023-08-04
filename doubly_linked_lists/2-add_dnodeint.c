@@ -3,11 +3,11 @@
 #include "lists.h"
 
 /**
- *dlistint_len - returns len of lists
- *@n: points to the first node
- *Return: the size of the list
+ **add_dnodeint - adds a new node
+ *@head: points to the First of the list
+ *@n: holds an int value
+ *Return: address of new node or null
  */
-
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node;
