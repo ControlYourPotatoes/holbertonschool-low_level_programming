@@ -1,8 +1,13 @@
 #include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
+/**
+ **add_node_end- adds a new node to the end of a list
+ *@head: points to the begining of a list
+ *@str: points to a constant string
+ *Return: &(add) of new tail of NULL if fail
+ */
 
-/* Adds a new node at the end of a list_t list */
 list_t *add_node_end(list_t **head, const char *str)
 {
     if (str == NULL)
