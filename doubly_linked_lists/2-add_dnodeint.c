@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ *dlistint_len - returns len of lists
+ *@n: points to the first node
+ *Return: the size of the list
+ */
+
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node;
