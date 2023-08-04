@@ -24,7 +24,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	newTail->len = strlen(str);
-	newTail->next = NULL; /* Make sure the newTail points to NULL (end of the list). */
+	newTail->next = NULL; /* Make sure the newTail points to NULL */
+
 	if (*head == NULL)
 	{
 		/* If empty, make the newTail the head. */
@@ -34,6 +35,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		/* Traverse the list to last. */
 		list_t *current = *head;
+
 		while (current->next != NULL)
 		{
 			current = current->next;
