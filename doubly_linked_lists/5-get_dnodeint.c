@@ -9,18 +9,18 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    dlistint_t *current = head;
-    unsigned int count = 0;
+	dlistint_t *current = head;
+	unsigned int count = 0;
 
-    while (current != NULL)
-    {
-        if (count == index) /* if node is found*/
-        {
-            return (current);
-        }
-        current = current->next;
-        count++;
-    }
-    /* Node at the specified index does not exist */
-    return (NULL);
+	while (current != NULL)
+	{
+		if (count == index) /* if node is found*/
+		{
+			return (current);
+		}
+		current = current->next;
+		count++;
+	}
+	/* Node at the specified index does not exist */
+	return (NULL);
 }
