@@ -1,42 +1,38 @@
 #include "lists.h"
 /**
- *add_dnodeint_end - adds a new node in the end
- *@head: a pointer to head
- *@n: data to be stored
- *Return: new node address of null if failed
+ *delete_dnodeint_at_index- dele a node at a given location
+ *@head: points to a pointer that points to head
+ *@index: where we want to delet the node
+ *Return: 1 if success or -1 if fail
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *new_node;
+    /*Declarations*/
+    dlistint_t *temp;
+    unsigned int count = 0;
 
-	new_node = malloc(sizeof(dlistint_t));
-	if (new_node == NULL) /* if failed to allocate memory  */
-	{
-		return (NULL);
-	}
-
-	new_node->n = n;
-	new_node->next = NULL;
-
-	if (*head == NULL)
-	{
-		/* If the list is empty, make the new node the head */
-		new_node->prev = NULL;
-		*head = new_node;
-	}
-	else
-	{
-		/* Find the last node and move pointers */
-		dlistint_t *last_node = *head;
-
-		while (last_node->next != NULL)
-		{
-			last_node = last_node->next;
-		}
-
-		last_node->next = new_node;
-		new_node->prev = last_node;
-	}
-
-	return (new_node);
-}
+    /*check if where pointed is in null*/
+    if (*head == NULL)
+        return (-1);
+    temp = *head;
+    if (index == 0)
+    {
+        *head = temp->next; /*Move head over*/
+        if (*head != NULL)
+            (*head)->prev = NULL; /*set to null if head is empty*/
+        free(temp);
+        return (1);
+    }
+    /*Move alon the list*/
+    while (temp != NULL && count < index)
+    {
+        /*Move and add to count*/
+        temp = temp->next;
+        count++;
+    }                              /*end while*/
+    temp->prev->next = temp->next; /*set the prev node to look next to*/
+    if (temp->next != NULL)
+        temp->next->prev = temp->prev; /*set next node prev to */
+    free(temp);
+    return (1);
+} /*end function*/
