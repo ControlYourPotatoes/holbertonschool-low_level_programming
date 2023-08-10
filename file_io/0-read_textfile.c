@@ -4,7 +4,7 @@
 #include <fcntl.h>
 
 /**
- * read_textfile - function that reads a text file and prints it to POSIX stdout.
+ * read_textfile - function that reads a text file and prints it.
  * @filename: The name of the text file.
  * @letters: The maximum number of characters to read and print.
  * Return: The actual number of characters read and printed.
