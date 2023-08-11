@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		exit_with_error(97, "Usage: %s file_from file_to\n", argv[1]);
+		exit_with_error(97, "Usage: cp file_from file_to\n");
 	}
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
