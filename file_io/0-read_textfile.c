@@ -48,4 +48,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	return (bytesWritten);
 }
-remove main and move all variable declaration to the top to pass gcc flags
