@@ -1,5 +1,3 @@
-#The prototypes of all your functions should be included in your header file called search_algos.h
-
 #ifndef SEARCH_ALGOS_H
 #define SEARCH_ALGOS_H
 
